@@ -48,7 +48,7 @@ public class CardTest {
     }
 
     @Test
-    void shouldSetCityromListAndDateFromCalendar() {
+    void shouldSetCityFromListAndDateFromCalendar() {
         open("http://localhost:7777");
         SelenideElement form = $("form");
 
