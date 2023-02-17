@@ -19,7 +19,6 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class CardTest {
 
-
     @Test
     void shouldSubmitRequest() {
         open("http://localhost:7777");
