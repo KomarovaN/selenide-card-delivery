@@ -29,7 +29,7 @@ public class CardTest {
     }
 
     @Test
-    void shouldSubmitRequest() {
+    public void shouldSubmitRequest() {
         planningDate = generateDate(4);
 
         open("http://localhost:7777");
@@ -48,7 +48,7 @@ public class CardTest {
     }
 
     @Test
-    void shouldSetCityFromListAndDateFromCalendar() {
+    public void shouldSetCityFromListAndDateFromCalendar() {
         open("http://localhost:7777");
         SelenideElement form = $("form");
 
