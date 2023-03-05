@@ -47,7 +47,6 @@ public class CardTest {
         $(".notification__content")
                 .shouldHave(Condition.text("Встреча успешно забронирована на " + planningDate), Duration.ofSeconds(15))
                 .shouldBe(Condition.visible);
-
     }
 
     @Test
@@ -68,7 +67,7 @@ public class CardTest {
         // если месяцы выбранной в календаре по умолчанию даты и планируемой даты не равны
         planningDate = generateDate(addDays, "MM");
         $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
-        if (!generateDate(addDays, "MM").equals(generateDate(0, "MM"))) {
+        if (!generateDate(addDays, "MM").equals(generateDate(3, "MM"))) {
             // то перелистываем страницу
             $("[data-step='1']").click();
         }
